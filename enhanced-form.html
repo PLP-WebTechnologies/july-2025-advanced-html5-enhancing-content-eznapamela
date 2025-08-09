@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Page with Form</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>My Enhanced Multi-Section Web Page</h1>
+      <p>
+        Showcasing HTML5 lists, tables, media, and forms with built-in
+        validation.
+      </p>
+    </header>
+
+    <!-- Lists Section -->
+    <section>
+      <h2>Favorite Programming Languages</h2>
+      <ol>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+      </ol>
+
+      <h2>Daily Tasks</h2>
+      <ul>
+        <li>Check emails</li>
+        <li>Write code</li>
+        <li>Review pull requests</li>
+      </ul>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Database Management</td>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Networking Basics</td>
+            <td>Friday</td>
+            <td>9:00 AM - 11:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Media Showcase</h2>
+      <img src="https://via.placeholder.com/600x300" alt="Placeholder Image" />
+      <br /><br />
+      <video controls width="400">
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="John Doe"
+            required
+            minlength="3"
+          />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+            autocomplete="email"
+          />
+
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+254712345678"
+            pattern="^\+?\d{10,15}$"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            minlength="5"
+            maxlength="15"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+          />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            minlength="6"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+          </select>
+
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+
+          <label for="bio">Short Bio:</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="Tell us something about yourself..."
+            minlength="10"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Agreements</legend>
+          <label>
+            <input type="checkbox" name="terms" required /> I agree to the terms
+            and conditions.
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 My Web Page. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
